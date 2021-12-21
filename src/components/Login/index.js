@@ -50,7 +50,7 @@ let Login = (props) =>  {
                 <div className="col-12 col-6 d-flex justify-content-center">
                     <form onSubmit={ onFormSubmit }>
                         <div>
-                            <h5 className= "text-white">Login</h5>
+                            <h5 className= "text-white col-12 mb-2 md:col-2 md:mb-0">Login</h5>
                             <div className="field">
                                 <div className="col-12 mb-2 md:col-2 md:mb-0">
                                     <div class="form-floating">
@@ -68,7 +68,7 @@ let Login = (props) =>  {
                                 </div>
                             </div>
                             <div className="col-12 md:col-6 ">
-                                <button type="submit" className="btn btn-primary btn-sm">Iniciar sesión</button>
+                                <button type="submit" className="w-100 btn btn-md btn-primary">Iniciar sesión</button>
                             </div>
                         </div>
                     </form>
