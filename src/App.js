@@ -36,7 +36,6 @@ function App() {
     }
   }, [])
 
-  /**/
   const cerrarSesion = async () => {
     localStorage.setItem('tokenAcceso',null);
     setSesionIniciada(false)
