@@ -1,5 +1,4 @@
 import Usuario from '../Usuario';
-import NavBar from '../NavBar';
 import FormUsuario from '../FormUsuario'
 import Paginator from '../Paginator'
 import { Modal, Spinner } from 'react-bootstrap';

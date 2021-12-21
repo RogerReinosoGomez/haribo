@@ -3,9 +3,7 @@ import React from 'react';
 import { useState } from "react";
 import { IniciarSesion } from "./api";
 
-import NavBar from '../NavBar';
-
-import '../../App'
+import '../../App.css'
 
 let Login = (props) =>  {
     const [ cedula, setUsuario ] = useState('');
@@ -42,35 +40,35 @@ let Login = (props) =>  {
                     <i><strong>Nuestra filosofía de vida:</strong></i>
                     No dejar paladares sin conquistar. Prueba nuestros sensacionales gomitas y conoce el verdadero amor!
                 </p>
+                <div className="row mt-2">
+                    <div className="col-12 text-center text-danger">
+                        <h5>
+                            { error }
+                        </h5>
+                    </div>
+                </div>
                 <div className="col-12 col-6 d-flex justify-content-center">
                     <form onSubmit={ onFormSubmit }>
                         <div>
-                            <div className="row mt-2">
-                                <div className="col-12 text-center">{ error }</div>
-                            </div>
                             <h5 className= "text-white">Login</h5>
                             <div className="field">
                                 <div className="col-12 mb-2 md:col-2 md:mb-0">
-                                    <span className="p-input-icon-left">
-                                        <i className="pi pi-user" />
-                                        <input type="text" className="form-control" id="usuario"
-                                            value={ cedula } onChange={ onUsuarioChange }
-                                        />
-                                    </span>
+                                    <div class="form-floating">
+                                        <input type="text" className="form-control" id="usuario" value={ cedula } onChange={ onUsuarioChange } placeholder='Cedula' />
+                                        <label for="floatingInput">Cédula</label>
+                                    </div>
                                 </div>
                             </div >
                             <div className="field">
                                 <div className="col-12 mb-2 md:col-2 md:mb-0">
-                                    <span className="p-input-icon-left">
-                                        <i className="pi pi-ellipsis-h" />
-                                        <input type="password" className="form-control" id="contrasena"
-                                            value={ password } onChange={ onPasswordChange }
-                                        />
-                                    </span>
+                                    <div class="form-floating">
+                                        <input type="password" className="form-control" id="contrasena" value={ password } onChange={ onPasswordChange } placeholder='Password' />
+                                        <label for="floatingInput">Password</label>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-12 md:col-6 ">
-                                <button type="submit" className="btn btn-primary btn-lg">Iniciar sesión</button>
+                                <button type="submit" className="btn btn-primary btn-sm">Iniciar sesión</button>
                             </div>
                         </div>
                     </form>
