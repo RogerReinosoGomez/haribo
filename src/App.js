@@ -1,6 +1,6 @@
 import Footer from './components/Footer'
 //import Principal from './components/Principal'
-import TablaUsuarios from './components/TablaUsuarios';
+import TablaUsuarios from './components/Usuarios/index';
 import React, { Fragment, useState, useEffect } from 'react';
 //import './App.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';

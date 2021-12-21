@@ -36,7 +36,6 @@ let Login = (props) =>  {
 
     return(
         <>
-            <NavBar />
             <div>
                 <h1 className =  "d-flex justify-content-center text-white">EMPRESA HARIBO</h1>
                 <p className="d-flex justify-content-center text-white ">

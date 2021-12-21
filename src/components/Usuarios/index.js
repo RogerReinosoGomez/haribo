@@ -151,7 +151,6 @@ let TablaUsuarios = () => {
 
     return(
         <div className="container-fluid px-5" >
-            <NavBar />
             <div className="card mt-5 mx-5">
                 <div className="card-body">
                     <button className="btn btn-outline-primary float-sm-end ml-1" onClick={ onRefrescar } >
